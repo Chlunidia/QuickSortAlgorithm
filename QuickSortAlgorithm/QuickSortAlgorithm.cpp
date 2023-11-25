@@ -103,3 +103,9 @@ public:
         std::cin.get();
     }
 };
+
+int main() {
+    QuickSort mySort;
+    mySort.run();
+    return 0;
+}
