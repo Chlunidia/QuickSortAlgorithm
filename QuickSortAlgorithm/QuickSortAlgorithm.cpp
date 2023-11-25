@@ -74,4 +74,17 @@ public:
         q_sort(low, j - 1);
         q_sort(j + 1, high);
     }
+
+    void display() {
+        std::cout << "\n-----------------------";
+        std::cout << "\n Sorted array elements ";
+        std::cout << "\n-----------------------\n";
+
+        for (int j = 0; j < n; j++) {
+            std::cout << arr[j] << std::endl;
+        }
+
+        std::cout << "\nNumber of comparisons: " << cmp_count;
+        std::cout << "\nNumber of data movements: " << mov_count << std::endl;
+    }
 };
