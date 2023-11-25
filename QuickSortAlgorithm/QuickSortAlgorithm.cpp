@@ -87,4 +87,8 @@ public:
         std::cout << "\nNumber of comparisons: " << cmp_count;
         std::cout << "\nNumber of data movements: " << mov_count << std::endl;
     }
+
+    int getSize() {
+        return n;
+    }
 };
