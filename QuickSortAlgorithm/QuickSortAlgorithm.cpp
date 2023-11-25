@@ -91,4 +91,15 @@ public:
     int getSize() {
         return n;
     }
+
+    void run() {
+        QuickSort myList;
+        myList.input();
+        myList.q_sort(0, myList.getSize() - 1);
+        myList.display();
+
+        std::cout << "\n\nPress Enter to Exit";
+        std::cin.ignore();
+        std::cin.get();
+    }
 };
